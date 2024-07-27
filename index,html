@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Redesign</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">Logo</div>
+            <ul>
+                <li class="active">Dashboard</li>
+                <li>Master Setting</li>
+                <li>Manage Merchant</li>
+                <li>Manage API Doc</li>
+                <li>Payment Gateway</li>
+                <li>Manage User</li>
+                <li>Transaction Monitoring</li>
+                <li>Transaction Report</li>
+                <li>Manage Settlement</li>
+                <li>AQ Test</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="top-bar">
+                <input type="text" placeholder="Search">
+                <div class="currency-selector">
+                    <select>
+                        <option>USD</option>
+                        <!-- other currency options -->
+                    </select>
+                </div>
+                <div class="merchant-selector">
+                    <select>
+                        <option>Select Merchant</option>
+                        <!-- other merchant options -->
+                    </select>
+                </div>
+                <div class="icons">
+                    <i class="icon1"></i>
+                    <i class="icon2"></i>
+                    <i class="icon3"></i>
+                    <i class="icon4"></i>
+                    <i class="icon5"></i>
+                </div>
+                <div class="user-profile">
+                    <img src="user-profile.png" alt="User Profile">
+                </div>
+            </div>
+            <div class="overview">
+                <div class="congratulations">
+                    <p>Congratulations, <span>User!</span></p>
+                    <p>You have done 23.99% sales today <span>🎉</span></p>
+                </div>
+                <div class="sales-info">
+                    <div class="sales">
+                        <p>Sales</p>
+                        <p>$26,039</p>
+                        <p>Today's Sale</p>
+                    </div>
+                    <div class="transactions">
+                        <p>Total</p>
+                        <p>1.4k</p>
+                        <p>Transactions today</p>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="weekly-overview">
+                        <p>Weekly Overview</p>
+                        <canvas id="weeklyOverviewChart"></canvas>
+                    </div>
+                    <div class="traffic-status">
+                        <p>Traffic Status</p>
+                        <canvas id="trafficStatusChart"></canvas>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="transactions-stat">Transactions</div>
+                    <div class="country-wise-overview">Weekly Country-wise Overview</div>
+                    <div class="successful-transactions">Weekly Successful Transactions</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+</html>
